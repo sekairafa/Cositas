@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray4"
+    tools:context=".ActivityUnits">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/LinearL_title"
+            style="@style/title_bar_style"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/imgB_back"
+                style="@style/imgB_arrow"
+                android:contentDescription="@string/txt_back_string"
+                android:rotation="180"
+                app:srcCompat="@mipmap/arrow" />
+
+            <TextView
+                android:id="@+id/txt_title"
+                style="@style/title_style"
+                android:text="@string/txt_option6_a1_string" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_dimension"
+            style="@style/layout_panel_spinner"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearL_title">
+
+            <TextView
+                android:id="@+id/txt_dimension"
+                style="@style/txt_spinner_label"
+                android:text="@string/txt_dimension_a7_string" />
+
+            <Spinner
+                android:id="@+id/spinner_dimension"
+                style="@style/spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_unit"
+            style="@style/layout_panel_spinner"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearL_dimension">
+
+            <TextView
+                android:id="@+id/txt_unit"
+                style="@style/txt_spinner_label"
+                android:text="@string/txt_unit_a7_string" />
+
+            <Spinner
+                android:id="@+id/spinner_unit"
+                style="@style/spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_val"
+            style="@style/layout_panel_spinner"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LinearL_unit">
+
+            <TextView
+                android:id="@+id/txt_val"
+                style="@style/txt_spinner_label"
+                android:text="@string/txt_val_a7_string" />
+
+            <LinearLayout
+                android:id="@+id/LinearL_txt_val"
+                style="@style/layout_wrapper_conv_edit">
+
+                <EditText
+                    android:id="@+id/editTextNumber_val"
+                    style="@style/edit_wrapped_value"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/imgB_calculate"
+                style="@style/imgB_calculate"
+                android:contentDescription="@string/txt_calculate_string"
+                app:srcCompat="@mipmap/arrow_calc" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/LinearL_val">
+
+            <LinearLayout
+                android:id="@+id/LinearL_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@color/gray5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

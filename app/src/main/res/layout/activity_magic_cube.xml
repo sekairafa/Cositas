@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray4"
+    tools:context=".ActivityMagicCube">
+
+    <LinearLayout
+        android:id="@+id/LinearL_title"
+        style="@style/title_bar_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgB_back"
+            style="@style/imgB_arrow"
+            android:contentDescription="@string/txt_back_string"
+            android:rotation="180"
+            app:srcCompat="@mipmap/arrow" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/title_style"
+            android:text="@string/txt_option7_a1_string" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinearL_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/LinearL_select"
+                style="@style/layout_panel"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_select"
+                    style="@style/txt_select"
+                    android:labelFor="@id/editTextNumber_select"
+                    android:text="@string/txt_select_a5_string" />
+
+                <EditText
+                    android:id="@+id/editTextNumber_select"
+                    style="@style/edit_select_magic"
+                    android:autofillHints=""
+                    android:text="@string/txt_3_string" />
+
+                <ImageButton
+                    android:id="@+id/imgB_minus"
+                    style="@style/imgB_select"
+                    android:contentDescription="@string/txt_select_string"
+                    app:srcCompat="@mipmap/minus" />
+
+                <ImageButton
+                    android:id="@+id/imgB_plus"
+                    style="@style/imgB_select"
+                    android:contentDescription="@string/txt_select_string"
+                    app:srcCompat="@mipmap/plus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearL_matrix"
+                style="@style/layout_wrapper_margin_fields">
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearL_generate"
+                style="@style/layout_panel"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_generate"
+                    style="@style/button_margin"
+                    android:text="@string/button_generate_string"
+                    app:backgroundTint="@color/green1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

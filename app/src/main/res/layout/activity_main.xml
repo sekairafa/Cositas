@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray4"
+    tools:context=".ActivityMain">
+
+    <LinearLayout
+        android:id="@+id/LinearL_title"
+        style="@style/title_bar_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/title_style"
+            android:text="@string/txt_title_a1_string" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearL_options"
+        style="@style/layout_wrapper"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinearL_title">
+
+        <LinearLayout
+            android:id="@+id/LinearL_option_1"
+            style="@style/layout_option">
+
+            <TextView
+                android:id="@+id/txt_option_1"
+                style="@style/txt_option"
+                android:text="@string/txt_option1_a1_string" />
+
+            <ImageButton
+                android:id="@+id/imgB_option_1"
+                style="@style/imgB_arrow"
+                android:contentDescription="@string/txt_option1_a1_string"
+                app:srcCompat="@mipmap/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_option_2"
+            style="@style/layout_option">
+
+            <TextView
+                android:id="@+id/txt_option_2"
+                style="@style/txt_option"
+                android:text="@string/txt_option2_a1_string" />
+
+            <ImageButton
+                android:id="@+id/imgB_option_2"
+                style="@style/imgB_arrow"
+                android:contentDescription="@string/txt_option2_a1_string"
+                app:srcCompat="@mipmap/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_option_3"
+            style="@style/layout_option">
+
+            <TextView
+                android:id="@+id/txt_option_3"
+                style="@style/txt_option"
+                android:text="@string/txt_option3_a1_string" />
+
+            <ImageButton
+                android:id="@+id/imgB_option_3"
+                style="@style/imgB_arrow"
+                android:contentDescription="@string/txt_option3_a1_string"
+                app:srcCompat="@mipmap/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_option_4"
+            style="@style/layout_option">
+
+            <TextView
+                android:id="@+id/txt_option_4"
+                style="@style/txt_option"
+                android:text="@string/txt_option4_a1_string" />
+
+            <ImageButton
+                android:id="@+id/imgB_option_4"
+                style="@style/imgB_arrow"
+                android:contentDescription="@string/txt_option4_a1_string"
+                app:srcCompat="@mipmap/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_option_5"
+            style="@style/layout_option">
+
+            <TextView
+                android:id="@+id/txt_option_5"
+                style="@style/txt_option"
+                android:text="@string/txt_option5_a1_string" />
+
+            <ImageButton
+                android:id="@+id/imgB_option_5"
+                style="@style/imgB_arrow"
+                android:contentDescription="@string/txt_option5_a1_string"
+                app:srcCompat="@mipmap/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_option_6"
+            style="@style/layout_option">
+
+            <TextView
+                android:id="@+id/txt_option_6"
+                style="@style/txt_option"
+                android:text="@string/txt_option6_a1_string" />
+
+            <ImageButton
+                android:id="@+id/imgB_option_6"
+                style="@style/imgB_arrow"
+                android:contentDescription="@string/txt_option6_a1_string"
+                app:srcCompat="@mipmap/arrow" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearL_option_7"
+            style="@style/layout_option">
+
+            <TextView
+                android:id="@+id/txt_option_7"
+                style="@style/txt_option"
+                android:text="@string/txt_option7_a1_string" />
+
+            <ImageButton
+                android:id="@+id/imgB_option_7"
+                style="@style/imgB_arrow"
+                android:contentDescription="@string/txt_option7_a1_string"
+                app:srcCompat="@mipmap/arrow" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

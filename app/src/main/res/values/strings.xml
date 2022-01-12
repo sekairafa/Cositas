@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">Cositas</string>
+    <string name="button_calculate_string">CALCULAR</string>
+    <string name="button_clean_string">LIMPIAR</string>
+    <string name="button_generate_string">GENERAR</string>
+    <string name="txt_0.0_string">0.0</string>
+    <string name="txt_2_string">2</string>
+    <string name="txt_3_string">3</string>
+    <string name="txt_back_string">back_button</string>
+    <string name="txt_select_string">select_button</string>
+    <string name="txt_traspose_string">traspose_button</string>
+    <string name="txt_reset_string">reset_button</string>
+    <string name="txt_calculate_string">calculate_button</string>
+    <string name="txt_bar_string">bar_image</string>
+    <string name="txt_xy_string">xy_image</string>
+
+    <string name="txt_x1_string">x1 =</string>
+    <string name="txt_x2_string">x2 =</string>
+    <string name="txt_x3_string">x3 =</string>
+    <string name="txt_x4_string">x4 =</string>
+    <string name="txt_x5_string">x5 =</string>
+
+    <string name="txt_title_a1_string">Cositas</string>
+    <string name="txt_option1_a1_string">Calculadora</string>
+    <string name="txt_option2_a1_string">Cálculo de Raíces</string>
+    <string name="txt_option3_a1_string">Matrices</string>
+    <string name="txt_option4_a1_string">Sistema de Ecuaciones</string>
+    <string name="txt_option5_a1_string">Interpolación</string>
+    <string name="txt_option6_a1_string">Conversión de Unidades</string>
+    <string name="txt_option7_a1_string">Cuadrado Mágico</string>
+
+    <string name="txt_val1_a2_string">Valor 1 =</string>
+    <string name="txt_val2_a2_string">Valor 2 =</string>
+    <string name="txt_operTitle_a2_string">Seleccione Operación</string>
+    <string name="radioButton_add_a2_string">Sumar</string>
+    <string name="radioButton_sub_a2_string">Restar</string>
+    <string name="radioButton_mul_a2_string">Multiplicar</string>
+    <string name="radioButton_div_a2_string">Dividir</string>
+    <string name="txt_memoryTitle_a2_string">MEMORIA</string>
+    <string name="button_mClr_a2_string">C</string>
+    <string name="button_mSet_a2_string">S</string>
+    <string name="button_mPlus_a2_string">M+</string>
+    <string name="button_mMinus_a2_string">M-</string>
+
+    <string name="txt_select_a3_string">Seleccionar Orden =</string>
+    <string name="txt_poly1_a3_string">ax + b = 0</string>
+    <string name="txt_poly2_a3_string">ax² + bx + c = 0</string>
+    <string name="txt_poly3_a3_string">ax³ + bx² + cx + d = 0</string>
+    <string name="txt_poly4_a3_string">ax⁴ + bx³ + cx² + dx + e = 0</string>
+    <string name="txt_poly5_a3_string">ax⁵ + bx⁴ + cx³ + dx² + ex + f = 0</string>
+    <string name="txt_val1_a3_string">a =</string>
+    <string name="txt_val2_a3_string">b =</string>
+    <string name="txt_val3_a3_string">c =</string>
+    <string name="txt_val4_a3_string">d =</string>
+    <string name="txt_val5_a3_string">e =</string>
+    <string name="txt_val6_a3_string">f =</string>
+
+    <string name="txt_radio1_a4_string">Sumar</string>
+    <string name="txt_radio2_a4_string">Multiplicar</string>
+    <string name="txt_radio3_a4_string">Inversa</string>
+    <string name="txt_dimension_rows_a4_string">Filas (2)</string>
+    <string name="txt_dimension_common_a4_string">Común (2)</string>
+    <string name="txt_dimension_cols_a4_string">Columnas (2)</string>
+    <string name="txt_dimension_order_a4_string">Orden (2)</string>
+    <string name="txt_matrix_a4_string">Matriz</string>
+    <string name="txt_matrixA_a4_string">Matriz A</string>
+    <string name="txt_matrixB_a4_string">Matriz B</string>
+    <string name="txt_matrixC_a4_string">Matriz C</string>
+    <string name="txt_inverse_a4_string">Inversa</string>
+    <string name="button_sum_string">SUMAR</string>
+    <string name="button_sub_string">RESTAR</string>
+    <string name="button_mul_string">MULTIPLICAR</string>
+    <string name="txt_deter_a4_string">Determinante</string>
+
+    <string name="txt_select_a5_string">Seleccionar Orden =</string>
+
+    <string name="txt_radio1_a6_string">1D</string>
+    <string name="txt_radio2_a6_string">2D</string>
+    <string name="txt_radio1_1d_a6_string">Cercano</string>
+    <string name="txt_radio2_1d_a6_string">Lineal</string>
+    <string name="txt_radio3_1d_a6_string">Cúbica</string>
+    <string name="txt_radio1_2d_a6_string">Bicercano</string>
+    <string name="txt_radio2_2d_a6_string">Bilineal</string>
+    <string name="txt_p1_a6_string">P1 :</string>
+    <string name="txt_p2_a6_string">P2 :</string>
+    <string name="txt_p3_a6_string">P3 :</string>
+    <string name="txt_p4_a6_string">P4 :</string>
+    <string name="txt_p5_a6_string">P5 :</string>
+    <string name="txt_x_a6_string">x</string>
+    <string name="txt_y_a6_string">y</string>
+    <string name="txt_x1_a6_string">x1</string>
+    <string name="txt_x2_a6_string">x2</string>
+    <string name="txt_x3_a6_string">x3</string>
+    <string name="txt_x4_a6_string">x4</string>
+    <string name="txt_x5_a6_string">x5</string>
+    <string name="txt_y1_a6_string">y1</string>
+    <string name="txt_y2_a6_string">y2</string>
+    <string name="txt_y3_a6_string">y3</string>
+    <string name="txt_y4_a6_string">y4</string>
+    <string name="txt_y5_a6_string">y5</string>
+    <string name="txt_q11_a6_string">Q11</string>
+    <string name="txt_q12_a6_string">Q12</string>
+    <string name="txt_q21_a6_string">Q21</string>
+    <string name="txt_q22_a6_string">Q22</string>
+    <string name="txt_fxy_a6_string">f(x, y)</string>
+    <string name="txt_fxy1_a6_string">f(x, y1)</string>
+    <string name="txt_fxy2_a6_string">f(x, y2)</string>
+    <string name="txt_fx1y_a6_string">f(x1, y)</string>
+    <string name="txt_fx2y_a6_string">f(x2, y)</string>
+
+    <string name="txt_dimension_a7_string">Dimensión :</string>
+    <string name="txt_unit_a7_string">Unidad :</string>
+    <string name="txt_val_a7_string">Valor :</string>
+</resources>

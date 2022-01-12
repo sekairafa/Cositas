@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray4"
+    tools:context=".ActivityInterpolation">
+
+    <LinearLayout
+        android:id="@+id/LinearL_title"
+        style="@style/title_bar_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgB_back"
+            style="@style/imgB_arrow"
+            android:contentDescription="@string/txt_back_string"
+            android:rotation="180"
+            app:srcCompat="@mipmap/arrow" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/title_style"
+            android:text="@string/txt_option5_a1_string" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinearL_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/LinearL_select"
+                style="@style/layout_panel"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup_dimension"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_1d"
+                        style="@style/radioButton_collapse"
+                        android:checked="true"
+                        android:text="@string/txt_radio1_a6_string" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_2d"
+                        style="@style/radioButton_collapse"
+                        android:text="@string/txt_radio2_a6_string" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearL_wrapper_1d"
+                style="@style/layout_wrapper">
+
+                <LinearLayout
+                    android:id="@+id/LinearL_1d_select"
+                    style="@style/layout_panel"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_1d"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_1d_nearest"
+                            style="@style/radioButton_collapse"
+                            android:checked="true"
+                            android:text="@string/txt_radio1_1d_a6_string" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_1d_linear"
+                            style="@style/radioButton_collapse"
+                            android:text="@string/txt_radio2_1d_a6_string"
+                            android:checked="true"/>
+
+                        <RadioButton
+                            android:id="@+id/radioButton_1d_cubic"
+                            style="@style/radioButton_collapse"
+                            android:text="@string/txt_radio3_1d_a6_string" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_1d_wrapper"
+                    style="@style/layout_wrapper" >
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_1d_p1"
+                        style="@style/layout_val" >
+
+                        <TextView
+                            android:id="@+id/txt_1d_p1"
+                            style="@style/txt_point"
+                            android:text="@string/txt_p1_a6_string" />
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_x1"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_x1_a6_string"
+                            android:autofillHints="" >
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_y1"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_y1_a6_string"
+                            android:autofillHints="" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_1d_p2"
+                        style="@style/layout_val" >
+
+                        <TextView
+                            android:id="@+id/txt_1d_p2"
+                            style="@style/txt_point"
+                            android:text="@string/txt_p2_a6_string" />
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_x2"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_x2_a6_string"
+                            android:autofillHints="" >
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_y2"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_y2_a6_string"
+                            android:autofillHints="" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_1d_p3"
+                        style="@style/layout_val" >
+
+                        <TextView
+                            android:id="@+id/txt_1d_p3"
+                            style="@style/txt_point"
+                            android:text="@string/txt_p3_a6_string" />
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_x3"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_x3_a6_string"
+                            android:autofillHints="" >
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_y3"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_y3_a6_string"
+                            android:autofillHints="" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_1d_p4"
+                        style="@style/layout_val"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_1d_p4"
+                            style="@style/txt_point"
+                            android:text="@string/txt_p4_a6_string" />
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_x4"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_x4_a6_string"
+                            android:autofillHints="" >
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_y4"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_y4_a6_string"
+                            android:autofillHints="" >
+                        </EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_1d_p5"
+                        style="@style/layout_val"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt_1d_p5"
+                            style="@style/txt_point"
+                            android:text="@string/txt_p5_a6_string" />
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_x5"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_x5_a6_string"
+                            android:autofillHints="" >
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/editTextNumberDecimal_1d_y5"
+                            style="@style/edit_point_value"
+                            android:hint="@string/txt_y5_a6_string"
+                            android:autofillHints="" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearL_wrapper_2d"
+                style="@style/layout_wrapper"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/LinearL_2d_select"
+                    style="@style/layout_panel"
+                    android:orientation="horizontal">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup_2d"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioButton_2d_nearest"
+                            style="@style/radioButton_collapse"
+                            android:checked="true"
+                            android:text="@string/txt_radio1_2d_a6_string" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton_2d_linear"
+                            style="@style/radioButton_collapse"
+                            android:text="@string/txt_radio2_2d_a6_string"
+                            android:checked="true"/>
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_fields"
+                    style="@style/layout_wrapper_margin_fields">
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_fields_row1"
+                        style="@style/layout_wrapper_matrix_fields_row">
+
+                        <LinearLayout
+                            style="@style/layout_wrapper_fields_cell_no_edit">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/xy"
+                                android:contentDescription="@string/txt_xy_string"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_x1"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_00"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_x1_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_x"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_01"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_x_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_x2"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_02"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_x2_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_fields_row2"
+                        style="@style/layout_wrapper_matrix_fields_row">
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_y1"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_03"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_y1_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_q11"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_04"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_q11_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_fxy1"
+                            style="@style/layout_wrapper_fields_cell_result">
+
+                            <TextView
+                                android:id="@+id/txt_00"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_fxy1_a6_string" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_q21"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_05"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_q21_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_fields_row3"
+                        style="@style/layout_wrapper_matrix_fields_row">
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_y"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_06"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_y_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_fx1y"
+                            style="@style/layout_wrapper_fields_cell_result">
+
+                            <TextView
+                                android:id="@+id/txt_01"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_fx1y_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_fxy"
+                            style="@style/layout_wrapper_fields_cell_result">
+
+                            <TextView
+                                android:id="@+id/txt_02"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_fxy_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_fx2y"
+                            style="@style/layout_wrapper_fields_cell_result">
+
+                            <TextView
+                                android:id="@+id/txt_03"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_fx2y_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LinearL_fields_row4"
+                        style="@style/layout_wrapper_matrix_fields_row">
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_y2"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_07"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_y2_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_q12"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_08"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_q12_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_fxy2"
+                            style="@style/layout_wrapper_fields_cell_result">
+
+                            <TextView
+                                android:id="@+id/txt_04"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_fxy2_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearL_field_q22"
+                            style="@style/layout_wrapper_fields_cell_edit">
+
+                            <EditText
+                                android:id="@+id/editTextNumber_09"
+                                style="@style/edit_cell"
+                                android:hint="@string/txt_q22_a6_string"
+                                android:autofillHints="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearL_calculate"
+                style="@style/layout_panel"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_calculate"
+                    style="@style/button_margin"
+                    android:text="@string/button_calculate_string"
+                    app:backgroundTint="@color/green1" />
+
+                <Button
+                    android:id="@+id/button_clean"
+                    style="@style/button_margin"
+                    android:text="@string/button_clean_string"
+                    app:backgroundTint="@color/green1" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

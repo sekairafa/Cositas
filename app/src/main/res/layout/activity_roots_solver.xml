@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray4"
+    tools:context=".ActivityRootsSolver">
+
+    <LinearLayout
+        android:id="@+id/LinearL_title"
+        style="@style/title_bar_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgB_back"
+            style="@style/imgB_arrow"
+            android:contentDescription="@string/txt_back_string"
+            android:rotation="180"
+            app:srcCompat="@mipmap/arrow" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            style="@style/title_style"
+            android:text="@string/txt_option2_a1_string" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/LinearL_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/LinearL_select"
+                style="@style/layout_panel"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/txt_select"
+                    style="@style/txt_select"
+                    android:labelFor="@id/editTextNumber_select"
+                    android:text="@string/txt_select_a3_string" />
+
+                <EditText
+                    android:id="@+id/editTextNumber_select"
+                    style="@style/edit_select"
+                    android:autofillHints=""
+                    android:text="@string/txt_2_string" />
+
+                <ImageButton
+                    android:id="@+id/imgB_minus"
+                    style="@style/imgB_select"
+                    android:contentDescription="@string/txt_select_string"
+                    app:srcCompat="@mipmap/minus" />
+
+                <ImageButton
+                    android:id="@+id/imgB_plus"
+                    style="@style/imgB_select"
+                    android:contentDescription="@string/txt_select_string"
+                    app:srcCompat="@mipmap/plus" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_order"
+                style="@style/txt_span"
+                android:text="@string/txt_poly2_a3_string"/>
+
+            <LinearLayout
+                android:id="@+id/LinearL_wrapper_values"
+                style="@style/layout_wrapper" >
+
+                <LinearLayout
+                    android:id="@+id/LinearL_val1"
+                    style="@style/layout_val">
+
+                    <TextView
+                        android:id="@+id/txt_val1"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editTextNumberDecimal_val1"
+                        android:text="@string/txt_val1_a3_string" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal_val1"
+                        style="@style/edit_value"
+                        android:autofillHints="" >
+                        <requestFocus />
+                    </EditText>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_val2"
+                    style="@style/layout_val">
+
+                    <TextView
+                        android:id="@+id/txt_val2"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editTextNumberDecimal_val2"
+                        android:text="@string/txt_val2_a3_string" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal_val2"
+                        style="@style/edit_value"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_val3"
+                    style="@style/layout_val">
+
+                    <TextView
+                        android:id="@+id/txt_val3"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editTextNumberDecimal_val3"
+                        android:text="@string/txt_val3_a3_string" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal_val3"
+                        style="@style/edit_value"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_val4"
+                    style="@style/layout_val"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_val4"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editTextNumberDecimal_val4"
+                        android:text="@string/txt_val4_a3_string" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal_val4"
+                        style="@style/edit_value"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_val5"
+                    style="@style/layout_val"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_val5"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editTextNumberDecimal_val5"
+                        android:text="@string/txt_val5_a3_string" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal_val5"
+                        style="@style/edit_value"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_val6"
+                    style="@style/layout_val"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_val6"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editTextNumberDecimal_val6"
+                        android:text="@string/txt_val6_a3_string" />
+
+                    <EditText
+                        android:id="@+id/editTextNumberDecimal_val6"
+                        style="@style/edit_value"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearL_calculate"
+                style="@style/layout_panel"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button_calculate"
+                    style="@style/button_basic"
+                    android:text="@string/button_calculate_string"
+                    app:backgroundTint="@color/green1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearL_wrapper_result"
+                style="@style/layout_wrapper" >
+
+                <LinearLayout
+                    android:id="@+id/LinearL_x1"
+                    style="@style/layout_val">
+
+                    <TextView
+                        android:id="@+id/txt_x1"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editText_x1"
+                        android:text="@string/txt_x1_string" />
+
+                    <EditText
+                        android:id="@+id/editText_x1"
+                        style="@style/edit_result"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_x2"
+                    style="@style/layout_val">
+
+                    <TextView
+                        android:id="@+id/txt_x2"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editText_x2"
+                        android:text="@string/txt_x2_string" />
+
+                    <EditText
+                        android:id="@+id/editText_x2"
+                        style="@style/edit_result"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_x3"
+                    style="@style/layout_val"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_x3"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editText_x3"
+                        android:text="@string/txt_x3_string" />
+
+                    <EditText
+                        android:id="@+id/editText_x3"
+                        style="@style/edit_result"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_x4"
+                    style="@style/layout_val"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_x4"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editText_x4"
+                        android:text="@string/txt_x4_string" />
+
+                    <EditText
+                        android:id="@+id/editText_x4"
+                        style="@style/edit_result"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearL_x5"
+                    style="@style/layout_val"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/txt_x5"
+                        style="@style/txt_value"
+                        android:labelFor="@id/editText_x5"
+                        android:text="@string/txt_x5_string" />
+
+                    <EditText
+                        android:id="@+id/editText_x5"
+                        style="@style/edit_result"
+                        android:autofillHints="" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
